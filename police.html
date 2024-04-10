@@ -38,7 +38,7 @@
     <button id="emergencyButton">Emergency</button> <!-- Button for emergency -->
     <script>
         var platform = new H.service.Platform({
-            'apikey': 'kvmRZD2v5zoIUmyBTPIFBGiUYNPw4BQfToxLSod10qM'
+            'apikey': 'YOUR API KEY'
         });
 
         var defaultLayers = platform.createDefaultLayers();
@@ -178,10 +178,10 @@
 
         // Function to send message with user's current location and address
         function sendMessage(userLocation, address) {
-            const accountSid = 'ACac6b65990be7644e6e3f9e564e979fe5';
-            const authToken = 'ca8797255b50b58294c3edb003988a30';
+            const accountSid = 'YOUR SID';
+            const authToken = 'YOUR AUTH TOKEN';
             const fromNumber = '+19387661877'; // Your Twilio phone number
-            const toNumber = '+919569810255'; // Recipient's phone number
+            const toNumber = 'YOUR DUMMY NO.'; // Recipient's phone number
             const messageBody = 'Emergency Location: ' + address;
 
             fetch('https://api.twilio.com/2010-04-01/Accounts/' + accountSid + '/Messages.json', {
